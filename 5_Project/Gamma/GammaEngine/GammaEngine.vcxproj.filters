@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Framework\System">
+      <UniqueIdentifier>{16d3d0f0-1477-423a-a612-cae4ce9e5722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component">
+      <UniqueIdentifier>{7f53037d-c863-470e-bb3a-d43ce3a1471a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Entity">
+      <UniqueIdentifier>{4ea0e090-ffcf-41c8-9ada-25fd1b02719c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Renderer">
+      <UniqueIdentifier>{cc990b32-3e02-4163-bb24-b6e027ba9d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Etc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework\System\Timer">
+      <UniqueIdentifier>{8f03c5c3-406c-4b65-b217-0374f4fb6efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Tween">
+      <UniqueIdentifier>{1664fe5d-5eff-48d5-958a-8268a9312870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Physics">
+      <UniqueIdentifier>{129ac39d-ed30-4e89-8039-4c8b88d41bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Physics">
+      <UniqueIdentifier>{52fc3262-d56f-4a08-b5eb-31caca8c9b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Debug">
+      <UniqueIdentifier>{393ce50f-74c8-4a10-86e1-d65f4f01a626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Animation">
+      <UniqueIdentifier>{c1c038d3-043e-40bc-b636-75f341e69cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Spine">
+      <UniqueIdentifier>{b8544800-68a8-4bc1-9fd4-2ac746e9c9fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Input">
+      <UniqueIdentifier>{2c893137-48cb-406a-b966-b113df4ecd80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Graphic">
+      <UniqueIdentifier>{dd27abc5-1834-4d05-88d2-193cf1da0a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Collider">
+      <UniqueIdentifier>{b7a4ab52-90ee-4dda-bb5d-a2024c14b611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Input\XboxPad">
+      <UniqueIdentifier>{adc51b25-7ec7-41b4-b42c-2805122ff187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\ParticleSystem">
+      <UniqueIdentifier>{4672a438-670a-4bef-b5a5-41e22e1ce0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Particle">
+      <UniqueIdentifier>{371e4249-e5b7-40e7-b113-1d1a627d94e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\UI">
+      <UniqueIdentifier>{9b2ea985-94b1-457c-9030-c8c419f64f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\UI\Abstract">
+      <UniqueIdentifier>{481ffe20-e835-426f-975d-0d3486bf555d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Component\Light">
+      <UniqueIdentifier>{3701079c-2412-49fe-8a06-04183ffab9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Light">
+      <UniqueIdentifier>{fcbfe955-bbc5-4cb2-b1d9-358b7a58d17f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Framework\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Framework\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTime.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSystem.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Framework\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Framework\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Framework\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Framework\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipseRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Framework\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Framework\System\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerHandler.h">
+      <Filter>Framework\System\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Tween.h">
+      <Filter>Framework\System\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSystem.h">
+      <Filter>Framework\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="LineRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleCollider.h">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="GammaEngine.h" />
+    <ClInclude Include="Rigidbody.h">
+      <Filter>Framework\Component\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="LineCollider.h">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Framework\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="PolygonRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="PolygonCollider.h">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSpace.h">
+      <Filter>Framework\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="GammaTextureLoader.h">
+      <Filter>Framework\Component\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="SpineRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SpineModel.h">
+      <Filter>Framework\Component\Spine</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Framework\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicSystem.h">
+      <Filter>Framework\System\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Framework\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>Framework\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamepad.h">
+      <Filter>Framework\System\Input\XboxPad</Filter>
+    </ClInclude>
+    <ClInclude Include="GamepadManager.h">
+      <Filter>Framework\System\Input\XboxPad</Filter>
+    </ClInclude>
+    <ClInclude Include="Panel.h">
+      <Filter>Framework\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>Framework\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystem.h">
+      <Filter>Framework\Component\ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleManager.h">
+      <Filter>Framework\System\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="TextAnimator.h">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="UITextSegment.h">
+      <Filter>Framework\Component\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxUIElement.h">
+      <Filter>Framework\Component\UI\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="UIElement.h">
+      <Filter>Framework\Component\UI\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Framework\System\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Framework\Component\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Framework\Component\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="DistantLight.h">
+      <Filter>Framework\Component\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Framework\Component\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPanel.h">
+      <Filter>Framework\Component\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSystem.h">
+      <Filter>Framework\System\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSource.h">
+      <Filter>Framework\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="TextAnimationRenderer.h">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="LightAdapter.h">
+      <Filter>Framework\Component\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Letter.h">
+      <Filter>Framework\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineTime.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowSystem.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Framework\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Framework\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Framework\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Framework\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipseRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Framework\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Framework\System\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerHandler.cpp">
+      <Filter>Framework\System\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Tween.cpp">
+      <Filter>Framework\System\Tween</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionSystem.cpp">
+      <Filter>Framework\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleCollider.cpp">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigidbody.cpp">
+      <Filter>Framework\Component\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="LineCollider.cpp">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Framework\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="PolygonRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="PolygonCollider.cpp">
+      <Filter>Framework\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionSpace.cpp">
+      <Filter>Framework\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="GammaMath.h">
+      <Filter>Framework\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="SpineModel.cpp">
+      <Filter>Framework\Component\Spine</Filter>
+    </ClCompile>
+    <ClCompile Include="SpineRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Framework\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicSystem.cpp">
+      <Filter>Framework\System\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Framework\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPool.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamepad.cpp">
+      <Filter>Framework\System\Input\XboxPad</Filter>
+    </ClCompile>
+    <ClCompile Include="GamepadManager.cpp">
+      <Filter>Framework\System\Input\XboxPad</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Framework\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystem.cpp">
+      <Filter>Framework\Component\ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleManager.cpp">
+      <Filter>Framework\System\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="TextAnimator.cpp">
+      <Filter>Framework\Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPanel.cpp">
+      <Filter>Framework\Component\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIElement.cpp">
+      <Filter>Framework\Component\UI\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxUIElement.cpp">
+      <Filter>Framework\Component\UI\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="UITextSegment.cpp">
+      <Filter>Framework\Component\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Framework\System\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Framework\Component\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Framework\Component\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="DistantLight.cpp">
+      <Filter>Framework\Component\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLight.cpp">
+      <Filter>Framework\Component\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSystem.cpp">
+      <Filter>Framework\System\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSource.cpp">
+      <Filter>Framework\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="TextAnimationRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="LightAdapter.cpp">
+      <Filter>Framework\Component\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="LineRenderer.cpp">
+      <Filter>Framework\Component\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Letter.cpp">
+      <Filter>Framework\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GammaEngine.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="GammaEngine.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
