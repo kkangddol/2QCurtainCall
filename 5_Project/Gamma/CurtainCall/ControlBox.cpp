@@ -220,7 +220,7 @@ bool ControlBox::CheckStatus(int archIndex, int archDown, int archUp, int sound,
 
 	if (actorDown != -1)
 	{
-		temp *= (isActorDown_ == actorDown);
+		temp *= (!isActorUp_ == actorDown);
 	}
 
 	if (actorUp != -1)
@@ -230,7 +230,7 @@ bool ControlBox::CheckStatus(int archIndex, int archDown, int archUp, int sound,
 
 	if (actressDown != -1)
 	{
-		temp *= (isActressDown_ == actressDown);
+		temp *= (!isActressUp_ == actressDown);
 	}
 
 	if (actressUp != -1)

@@ -19,8 +19,9 @@ void WaterTank::Start()
 		trigger_->updateSubject.Select<float>([](Trigger* x) 
 			{
 			return x->progress;
-			}).Where([this](float x) 
+			}).Where([this](float x)
 				{
+				wheelRatio_ = x * 100;
 				return x >= 0.3;
 				}).Subscribe([this](float x)
 					{
@@ -32,6 +33,7 @@ void WaterTank::Start()
 			return x->progress;
 			}).Where([this](float x) 
 				{
+				wheelRatio_ = x * 100;
 				return x < 0.3;
 				}).Subscribe([this](float x)
 					{

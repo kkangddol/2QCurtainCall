@@ -229,6 +229,13 @@ void GameManager::Update()
 	}
 }
 
+void GameManager::OnEnable()
+{
+	playTime_ = 0;
+	isGameOver_ = false;
+	eventIndex_ = 0;
+}
+
 void GameManager::GameEnd()
 {
 	// TimerHandler의 벡터가 0이 된다

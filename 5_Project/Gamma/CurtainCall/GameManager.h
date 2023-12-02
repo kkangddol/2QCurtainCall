@@ -50,6 +50,7 @@ public:
 
 	virtual void Start() override;
 	virtual void Update() override;
+	virtual void OnEnable() override;
 
 public:
 	static void RegistPlayer(Player*);
