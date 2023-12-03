@@ -67,6 +67,9 @@
     <Filter Include="Script\Actor">
       <UniqueIdentifier>{93816f00-a652-4fd3-9cef-c3d82f1c1890}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Script\Util">
+      <UniqueIdentifier>{587e0f10-3172-41fb-86b0-0efc1926d097}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp">
@@ -174,6 +177,9 @@
     <ClCompile Include="Actor.cpp">
       <Filter>Script\Actor</Filter>
     </ClCompile>
+    <ClCompile Include="FileDataApplier.cpp">
+      <Filter>Script\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WorkSpace.h">
@@ -280,6 +286,9 @@
     </ClInclude>
     <ClInclude Include="Actor.h">
       <Filter>Script\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDataApplier.h">
+      <Filter>Script\Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

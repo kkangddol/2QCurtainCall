@@ -32,6 +32,7 @@ void Player::Start()
 	spineRenderer->model->animationState->setAnimation(0, "standby", true);
 	GameManager::RegistPlayer(this);
 	TitleManager::RegistPlayer(this);
+
 	
 	//Tween::Animate(transform->rotation, PLAYBACK::LOOP_FORWARD, 360, EASING::LINEAR, 5);
 }

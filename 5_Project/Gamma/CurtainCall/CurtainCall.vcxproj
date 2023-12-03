@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)$GRX;$(SolutionDir)$Common;$(SolutionDir)$GammaEffect;$(SolutionDir)$GammaEngine;$(SolutionDir)$spine-cpp;$(SolutionDir)$fmod</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -147,6 +147,7 @@
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="ControlBox.cpp" />
     <ClCompile Include="Disk.cpp" />
+    <ClCompile Include="FileDataApplier.cpp" />
     <ClCompile Include="Gondola.cpp" />
     <ClCompile Include="HighLighter.cpp" />
     <ClCompile Include="Information.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="Box.h" />
     <ClInclude Include="ControlBox.h" />
     <ClInclude Include="Disk.h" />
+    <ClInclude Include="FileDataApplier.h" />
     <ClInclude Include="Gondola.h" />
     <ClInclude Include="HighLighter.h" />
     <ClInclude Include="Information.h" />
