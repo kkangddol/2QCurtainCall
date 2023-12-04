@@ -23,7 +23,6 @@
 #include "Actor.h"
 #include "FileDataApplier.h"
 #include "GameManager.h"
-#include <format>
 ///생성한 오브젝트와 속해있는 컴포넌트를 하나의 함수로 묶어서 그대로 쓸 수 있게 해두는 곳이다.
 
 using namespace GammaEngine;
@@ -141,8 +140,7 @@ GameObject* Ingame::CreatePlayer(Scene* scene, float x, float y, int id)
 	failEffect->transform->SetParent(player->transform);
 	player->GetComponent<Player>()->SetAnimator(failEffect);
 
-	std::string filename = std::format("Resources/Data/player.ini", id);
-	FileDataApplier applier(filename);
+	FileDataApplier applier("Resources/Data/player.ini");
 	applier.SetProperty("runSpeed", player->GetComponent<Player>()->runSpeed);
 	applier.SetProperty("walkSpeed", player->GetComponent<Player>()->walkSpeed);
 	applier.SetProperty("grabSpeed", player->GetComponent<Player>()->grabSpeed);

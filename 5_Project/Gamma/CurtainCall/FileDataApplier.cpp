@@ -10,7 +10,7 @@ FileDataApplier::FileDataApplier(std::string path)
 
 void FileDataApplier::SetProperty(const std::string& propertyName, float& prop)
 {
-	appliedProperties.insert({ propertyName, prop });
+	appliedProperties.insert(std::make_pair(propertyName, new Property(prop)));
 }
 
 void FileDataApplier::Apply()
@@ -18,7 +18,7 @@ void FileDataApplier::Apply()
 	FileData data = FileData(filepath);
 	for (auto element : data.properties)
 	{
-		appliedProperties[element.first] = std::stof(element.second);
+		appliedProperties[element.first]->SetValue(std::stof(element.second));
 	}
 }
 
