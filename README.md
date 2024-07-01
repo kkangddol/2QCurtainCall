@@ -1,4 +1,12 @@
 # CurtainCall
+
+## 리소스 및 라이브러리 파일
+
+
+압축 해제 후 5_Project 폴더에 전체 복사 붙여넣기 해주세요.
+
+시작 프로젝트를 CurtainCall로 변경해주세요.
+
 ## 빌드 파일
 
 https://drive.google.com/file/d/1PXg488wahLG0oXFiL98Aetb8bsOnupRC/view?usp=sharing
