@@ -10,6 +10,8 @@ Gamma 솔루션의 경우 시작 프로젝트를 CurtainCall로 변경해주세�
 
 ## 빌드 파일
 
+CurtainCall 은 엑스박스 패드 2개로 플레이해야 합니다.
+
 https://drive.google.com/file/d/1PXg488wahLG0oXFiL98Aetb8bsOnupRC/view?usp=sharing
 
 게임 실행 파일 : V9/CurtainCall.exe
