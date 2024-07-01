@@ -1,8 +1,11 @@
 # CurtainCall
 ## 빌드 파일
-게임 실행 파일 : 1_Executable/V8/CurtainCall.exe
 
-맵 에디터 : 1_Executable/V8/CurtainCallMapEditor.exe
+https://drive.google.com/file/d/1PXg488wahLG0oXFiL98Aetb8bsOnupRC/view?usp=sharing
+
+게임 실행 파일 : V9/CurtainCall.exe
+
+맵 에디터 : V9/CurtainCallMapEditor.exe
 
 ## 개발 기간
 
