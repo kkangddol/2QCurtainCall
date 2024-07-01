@@ -124,7 +124,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)GammaEffect;$(SolutionDir)Direct2DModule;$(SolutionDir)spine-cpp;$(SolutionDir)GammaPhysics;$(SolutionDir)GammaSound;$(SolutionDir)GRX</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
