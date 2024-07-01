@@ -1,0 +1,31 @@
+#pragma once
+
+class CompositeEffect : public Effect
+{
+public: 
+	enum CompositMode
+	{
+		COMPOSITE_MODE_SOURCE_OVER,
+		COMPOSITE_MODE_DESTINATION_OVER,
+		COMPOSITE_MODE_SOURCE_IN,
+		COMPOSITE_MODE_DESTINATION_IN,
+		COMPOSITE_MODE_SOURCE_OUT,
+		COMPOSITE_MODE_DESTINATION_OUT,
+		COMPOSITE_MODE_SOURCE_ATOP,
+		COMPOSITE_MODE_DESTINATION_ATOP,
+		COMPOSITE_MODE_XOR,
+		COMPOSITE_MODE_PLUS,
+		COMPOSITE_MODE_SOURCE_COPY,
+		COMPOSITE_MODE_BOUNDED_SOURCE_COPY,
+		COMPOSITE_MODE_MASK_INVERT
+	};
+public:
+	std::wstring* other;
+	CompositMode mode;
+
+public:
+	CompositeEffect();
+	void SetOtherImage(std::wstring);
+	void SetCompositeMode(CompositMode);
+};
+

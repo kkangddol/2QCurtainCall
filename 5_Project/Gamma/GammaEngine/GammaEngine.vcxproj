@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ac2724b0-17c0-4ba9-be13-fb25276bf081}</ProjectGuid>
+    <RootNamespace>GammaEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Common;$(SolutionDir)GammaEffect;$(SolutionDir)Direct2DModule;$(SolutionDir)spine-cpp;$(SolutionDir)GammaPhysics;$(SolutionDir)GRX;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Common;$(SolutionDir)GammaEffect;$(SolutionDir)Direct2DModule;$(SolutionDir)spine-cpp;$(SolutionDir)GammaPhysics;$(SolutionDir)GRX;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\Lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Direct2DModule;$(SolutionDir)Common;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)Direct2DModule</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Common.lib;Direct2DModule.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GammaEngineAPI_Exporting;DEBUG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)GammaEffect;$(SolutionDir)Direct2DModule;$(SolutionDir)spine-cpp;$(SolutionDir)GammaPhysics;$(SolutionDir)GammaSound;$(SolutionDir)GRX</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GRX.lib;Common.lib;GammaEffect.lib;Direct2DModule.lib;spine-cpp.lib;GammaPhysics.lib;GammaSound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GammaEngineAPI_Exporting</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)GammaEffect;$(SolutionDir)Direct2DModule;$(SolutionDir)spine-cpp;$(SolutionDir)GammaPhysics;$(SolutionDir)GammaSound;$(SolutionDir)GRX</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GRX.lib;Common.lib;GammaEffect.lib;Direct2DModule.lib;spine-cpp.lib;GammaPhysics.lib;GammaSound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Animator.h" />
+    <ClInclude Include="AudioSource.h" />
+    <ClInclude Include="BoxCollider.h" />
+    <ClInclude Include="BoxUIElement.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CircleCollider.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionSpace.h" />
+    <ClInclude Include="CollisionSystem.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="DistantLight.h" />
+    <ClInclude Include="GamepadManager.h" />
+    <ClInclude Include="Gamepad.h" />
+    <ClInclude Include="GammaEngine.h" />
+    <ClInclude Include="GammaTextureLoader.h" />
+    <ClInclude Include="GraphicSystem.h" />
+    <ClInclude Include="BitmapRenderer.h" />
+    <ClInclude Include="EllipseRenderer.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Letter.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightAdapter.h" />
+    <ClInclude Include="LightSystem.h" />
+    <ClInclude Include="LineCollider.h" />
+    <ClInclude Include="LineRenderer.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="ObjectPool.h" />
+    <ClInclude Include="Panel.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="ParticleManager.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PolygonCollider.h" />
+    <ClInclude Include="PolygonRenderer.h" />
+    <ClInclude Include="RectangleRenderer.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Rigidbody.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="SpineModel.h" />
+    <ClInclude Include="SpineRenderer.h" />
+    <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextAnimationRenderer.h" />
+    <ClInclude Include="UIPanel.h" />
+    <ClInclude Include="UITextSegment.h" />
+    <ClInclude Include="TextAnimator.h" />
+    <ClInclude Include="TextRenderer.h" />
+    <ClInclude Include="EngineTime.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TimerHandler.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Tween.h" />
+    <ClInclude Include="UIElement.h" />
+    <ClInclude Include="WindowSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="AudioSource.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="BoxUIElement.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CircleCollider.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionSpace.cpp" />
+    <ClCompile Include="CollisionSystem.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="DistantLight.cpp" />
+    <ClCompile Include="Gamepad.cpp" />
+    <ClCompile Include="GamepadManager.cpp" />
+    <ClCompile Include="GammaMath.h" />
+    <ClCompile Include="GraphicSystem.cpp" />
+    <ClCompile Include="BitmapRenderer.cpp" />
+    <ClCompile Include="EllipseRenderer.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Letter.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="LightAdapter.cpp" />
+    <ClCompile Include="LightSystem.cpp" />
+    <ClCompile Include="LineCollider.cpp" />
+    <ClCompile Include="LineRenderer.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="SpotLight.cpp" />
+    <ClCompile Include="TextAnimationRenderer.cpp" />
+    <ClCompile Include="UIPanel.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="ParticleManager.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="PolygonCollider.cpp" />
+    <ClCompile Include="PolygonRenderer.cpp" />
+    <ClCompile Include="RectangleRenderer.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Rigidbody.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="SpineModel.cpp" />
+    <ClCompile Include="SpineRenderer.cpp" />
+    <ClCompile Include="TextAnimator.cpp" />
+    <ClCompile Include="TextRenderer.cpp" />
+    <ClCompile Include="EngineTime.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TimerHandler.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Tween.cpp" />
+    <ClCompile Include="UIElement.cpp" />
+    <ClCompile Include="UITextSegment.cpp" />
+    <ClCompile Include="WindowSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GammaEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="GammaEngine.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

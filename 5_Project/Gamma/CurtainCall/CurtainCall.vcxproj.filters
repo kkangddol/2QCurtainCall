@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EntryPoint">
+      <UniqueIdentifier>{83454082-7297-42ce-9793-7a3e5ed022a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{86bf42b3-747f-447c-b292-842238bd1ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{6c6b094c-94ca-4cdc-85ec-05c7fa1ca2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SandBox&amp;WorkSpace">
+      <UniqueIdentifier>{2e236304-9b4c-4b71-b532-4694af0f5896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Ingame">
+      <UniqueIdentifier>{61a817d9-e433-47d8-b795-cad52b67e68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Ingame\Camera">
+      <UniqueIdentifier>{dc42230a-8fa2-4ceb-96da-d51fb9f99f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Ingame\Debug">
+      <UniqueIdentifier>{00dc6187-1ecc-4935-a830-3bbb09f61bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Ingame\MapLoader">
+      <UniqueIdentifier>{4197b8fa-755f-4c5e-a407-13966fdec150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Abstract">
+      <UniqueIdentifier>{584fc645-97e6-4e9a-b8f7-48ba2aec4fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Trigger">
+      <UniqueIdentifier>{c3f67206-7bb0-4028-88fe-7e4b0301cc9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Reactant">
+      <UniqueIdentifier>{81f3e89d-100a-4003-8f37-1f704551d119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Gimick">
+      <UniqueIdentifier>{a178c139-4685-4e70-be3a-ef57d9b5c338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Player">
+      <UniqueIdentifier>{d9fb2ac1-791f-490d-8156-807e86ae6e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\HighLight">
+      <UniqueIdentifier>{2d45c35b-ab43-4d39-bcbe-32a4c82bde93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Info">
+      <UniqueIdentifier>{a8f0939f-d84b-4c1f-8768-1eca8f2df53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{9ee5d281-ef20-4bd4-b60e-8e0b7453e80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\UI">
+      <UniqueIdentifier>{cff9e4fe-e729-4596-b3a8-2ce758c9d681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Actor">
+      <UniqueIdentifier>{93816f00-a652-4fd3-9cef-c3d82f1c1890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Util">
+      <UniqueIdentifier>{587e0f10-3172-41fb-86b0-0efc1926d097}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EntryPoint.cpp">
+      <Filter>EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkSpace.cpp">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>Script\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="Reactant.cpp">
+      <Filter>Script\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEvent.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Script\Ingame\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="MainCamera.cpp">
+      <Filter>Script\Ingame\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Script\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Lever.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Wheel.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Elevator.cpp">
+      <Filter>Script\Reactant</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameBox.cpp">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBox.cpp">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClCompile>
+    <ClCompile Include="Scaffolding.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Ladder.cpp">
+      <Filter>Script\Gimick</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Script\Gimick</Filter>
+    </ClCompile>
+    <ClCompile Include="Arch.cpp">
+      <Filter>Script\Reactant</Filter>
+    </ClCompile>
+    <ClCompile Include="Disk.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="ArchDisk.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDataLoader.cpp">
+      <Filter>Script\Ingame\MapLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Manageable.cpp">
+      <Filter>Script\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterTank.cpp">
+      <Filter>Script\Reactant</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlBox.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Gondola.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyObject.cpp">
+      <Filter>Script\Reactant</Filter>
+    </ClCompile>
+    <ClCompile Include="Gondola.cpp">
+      <Filter>Script\Reactant</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicControlBox.cpp">
+      <Filter>Script\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="HighLighter.cpp">
+      <Filter>Script\HighLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Information.cpp">
+      <Filter>Script\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBoard.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleControlBox.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="IngameUI.cpp">
+      <Filter>Script\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Script\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDataApplier.cpp">
+      <Filter>Script\Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WorkSpace.h">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>Script\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Reactant.h">
+      <Filter>Script\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>Script\Ingame\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="MainCamera.h">
+      <Filter>Script\Ingame\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Script\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Lever.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="Wheel.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="Elevator.h">
+      <Filter>Script\Reactant</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameBox.h">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBox.h">
+      <Filter>SandBox&amp;WorkSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="Scaffolding.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="Ladder.h">
+      <Filter>Script\Gimick</Filter>
+    </ClInclude>
+    <ClInclude Include="IInteractable.h">
+      <Filter>Script\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Script\Gimick</Filter>
+    </ClInclude>
+    <ClInclude Include="Arch.h">
+      <Filter>Script\Reactant</Filter>
+    </ClInclude>
+    <ClInclude Include="Disk.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="ArchDisk.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDataLoader.h">
+      <Filter>Script\Ingame\MapLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Manageable.h">
+      <Filter>Script\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterTank.h">
+      <Filter>Script\Reactant</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlBox.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="Gondola.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyObject.h">
+      <Filter>Script\Reactant</Filter>
+    </ClInclude>
+    <ClInclude Include="Gondola.h">
+      <Filter>Script\Reactant</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicControlBox.h">
+      <Filter>Script\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="HighLighter.h">
+      <Filter>Script\HighLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Information.h">
+      <Filter>Script\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBoard.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleControlBox.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="IngameUI.h">
+      <Filter>Script\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Script\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDataApplier.h">
+      <Filter>Script\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
